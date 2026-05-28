@@ -6,17 +6,24 @@ export default function Hero() {
 
   const navigate = useNavigate()
 
-  const roles = ["Frontend Developer", "React Developer", "UI Designer"]
+  const roles = [
+    "Frontend Developer",
+    "React Developer",
+    "UI Designer"
+  ]
+
   const [text, setText] = useState("")
   const [index, setIndex] = useState(0)
   const [charIndex, setCharIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
 
   useEffect(() => {
+
     const current = roles[index]
     const speed = isDeleting ? 50 : 100
 
     const timeout = setTimeout(() => {
+
       setText(current.substring(0, charIndex))
 
       if (!isDeleting) {
@@ -37,9 +44,11 @@ export default function Hero() {
     }, speed)
 
     return () => clearTimeout(timeout)
+
   }, [charIndex, isDeleting, index])
 
   return (
+
     <section className="hero">
 
       <div className="hero-container">
@@ -52,48 +61,51 @@ export default function Hero() {
           </h1>
 
           <h2 className="hero-subtitle">
-            {text}<span className="cursor">|</span>
+            {text}
+            <span className="cursor">|</span>
           </h2>
 
           <p className="hero-text">
-            I build modern, responsive and user-friendly web applications
-            using React and latest frontend technologies.
+            I build modern, responsive and
+            user-friendly web applications
+            using React and latest frontend
+            technologies.
           </p>
 
           <div className="hero-buttons">
-            <button 
+
+            <button
               className="primary-btn"
               onClick={() => navigate("/projects")}
             >
               View Projects
             </button>
 
-<<<<<<< HEAD
-<a
+            <a
   href="/portfolio/resume.pdf"
-  target="_blank"
-  rel="noreferrer"
   className="secondary-btn"
 >
   View Resume
 </a>
-=======
-            <a href="/resume.pdf" download className="secondary-btn">
-              Download Resume
-            </a>
->>>>>>> 61c6f86400f6c4db10ba9ed1b9ee4828063154d5
+
           </div>
-          <div className="side-arrow" onClick={() => navigate("/about")}>
-  →
-</div>
+
+          <div
+            className="side-arrow"
+            onClick={() => navigate("/about")}
+          >
+            →
+          </div>
+
         </div>
 
-      {/* RIGHT SIDE */}
-<div className="hero-right">
-  <div className="hero-blob"></div>
- 
-    </div>  
-</div>
+        {/* RIGHT SIDE */}
+        <div className="hero-right">
+          <div className="hero-blob"></div>
+        </div>
+
+      </div>
+
     </section>
   )
 }

@@ -1,11 +1,7 @@
 import { useState, useEffect, useRef } from "react"
 import { NavLink } from "react-router-dom"
 import "./Navbar.css"
-<<<<<<< HEAD
 import profile from "../assets/Profile.jpg"
-=======
-import profile from "../assets/Profile.PNG"
->>>>>>> 61c6f86400f6c4db10ba9ed1b9ee4828063154d5
 
 export default function Navbar() {
 
@@ -118,11 +114,7 @@ export default function Navbar() {
               onClick={() => setShowImage(true)}
             />
             <NavLink to="/" className="logo">
-<<<<<<< HEAD
               Amit Kumar Saini
-=======
-              Amit
->>>>>>> 61c6f86400f6c4db10ba9ed1b9ee4828063154d5
             </NavLink>
           </div>
 

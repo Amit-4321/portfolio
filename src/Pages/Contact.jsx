@@ -1,6 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import "./Contact.css";
-import { FaPhone, FaEnvelope, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaLinkedin,
+  FaGithub,
+  FaInstagram
+} from "react-icons/fa";
+
 export default function Contact() {
 
   const navigate = useNavigate();
@@ -8,123 +14,128 @@ export default function Contact() {
   return (
     <section className="contact-section">
 
-      {/* 🔙 Back Arrow */}
-      <div className="side-arrow left" onClick={() => navigate(-1)}>
+      <div
+        className="side-arrow left"
+        onClick={() => navigate(-1)}
+      >
         ←
       </div>
 
       <div className="contact-container">
 
-        {/* ===== TOP: FORM ===== */}
+        {/* FORM */}
         <div className="contact-form-box">
+
           <h2>Contact Me</h2>
-          <p>Let’s work together or just say hello 👋</p>
+
+          <p>
+            Let’s work together or just say hello 👋
+          </p>
 
           <form className="contact-form">
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea rows="5" placeholder="Your Message" required></textarea>
 
-            <button type="submit">Send Message →</button>
+            <input
+              type="text"
+              placeholder="Your Name"
+              required
+            />
+
+            <input
+              type="email"
+              placeholder="Your Email"
+              required
+            />
+
+            <textarea
+              rows="5"
+              placeholder="Your Message"
+              required
+            ></textarea>
+
+            <button type="submit">
+              Send Message →
+            </button>
+
           </form>
+
         </div>
 
-        {/* ===== BOTTOM: CONTACT INFO ===== */}
-<<<<<<< HEAD
-       
+        {/* INFO */}
         <div className="contact-info-box">
 
-<span className="contact-tag">LET'S CONNECT</span>
+          <span className="contact-tag">
+            LET'S CONNECT
+          </span>
 
-<h2>Get In Touch</h2>
+          <h2>Get In Touch</h2>
 
-<p className="contact-desc">
-  Feel free to reach out for collaborations,
-  freelance projects or just a friendly chat.
-</p>
-
-<div className="info-grid">
-
-  {/* <a href="tel:+919876543210" className="info-item">
-    <FaPhone className="info-icon" />
-    <div>
-      <h4>Phone</h4>
-      <p>+91 9876543210</p>
-    </div>
-  </a> */}
-
-  <a href="mailto:yourmail@gmail.com" className="info-item">
-    <FaEnvelope className="info-icon" />
-    <div>
-      <h4>Gmail</h4>
-      <p>amit.saini23434@gmail.com</p>
-    </div>
-  </a>
-
-  <a href="#" target="_blank" className="info-item">
-    <FaLinkedin className="info-icon" />
-    <div>
-      <h4>LinkedIn</h4>
-      <p>https://www.linkedin.com/in/amit-kumar-887283129/</p>
-    </div>
-  </a>
-
-  <a href="#" target="_blank" className="info-item">
-    <FaGithub className="info-icon" />
-    <div>
-      <h4>GitHub</h4>
-      <p>https://github.com/Amit-4321</p>
-    </div>
-  </a>
-
-  <a href="#" target="_blank" className="info-item">
-    <FaInstagram className="info-icon" />
-    <div>
-      <h4>Instagram</h4>
-      <p>amit.6572kumar</p>
-    </div>
-  </a>
-
-</div>
-</div>     </div>
-=======
-        <div className="contact-info-box">
-
-          <h2>Get in Touch</h2>
+          <p className="contact-desc">
+            Feel free to reach out for collaborations,
+            freelance projects or just a friendly chat.
+          </p>
 
           <div className="info-grid">
 
-            <div className="info-item">
-              <FaPhone/>
-              <p>+91 9876543210</p>
-            </div>
+            <a
+              href="mailto:amit.saini23434@gmail.com"
+              className="info-item"
+            >
+              <FaEnvelope className="info-icon" />
 
-            <div className="info-item">
-             <FaEnvelope />
-              <p>yourmail@gmail.com</p>
-            </div>
+              <div>
+                <h4>Gmail</h4>
+                <p>amit.saini23434@gmail.com</p>
+              </div>
+            </a>
 
-            <div className="info-item">
-              <FaLinkedin/>
-              <a href="#">LinkedIn</a>
-            </div>
+            <a
+              href="https://www.linkedin.com/in/amit-kumar-887283129/"
+              target="_blank"
+              rel="noreferrer"
+              className="info-item"
+            >
+              <FaLinkedin className="info-icon" />
 
-            <div className="info-item">
-              <FaGithub />
-              <a href="#">GitHub</a>
-            </div>
+              <div>
+                <h4>LinkedIn</h4>
+                <p>Connect with me</p>
+              </div>
+            </a>
 
-            <div className="info-item">
-              <FaInstagram/>
-              <a href="#">Instagram</a>
-            </div>
+            <a
+              href="https://github.com/Amit-4321"
+              target="_blank"
+              rel="noreferrer"
+              className="info-item"
+            >
+              <FaGithub className="info-icon" />
+
+              <div>
+                <h4>GitHub</h4>
+                <p>View Projects</p>
+              </div>
+            </a>
+
+            <a
+              href="https://instagram.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="info-item"
+            >
+              <FaInstagram className="info-icon" />
+
+              <div>
+                <h4>Instagram</h4>
+                <p>@amit.6572kumar</p>
+              </div>
+            </a>
 
           </div>
 
         </div>
 
       </div>
->>>>>>> 61c6f86400f6c4db10ba9ed1b9ee4828063154d5
+
     </section>
   );
 }
