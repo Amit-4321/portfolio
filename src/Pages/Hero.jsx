@@ -68,14 +68,20 @@ export default function Hero() {
               View Projects
             </button>
 
-            <a
-  href="/resume.pdf"
+<<<<<<< HEAD
+<a
+  href="/portfolio/resume.pdf"
   target="_blank"
   rel="noreferrer"
   className="secondary-btn"
 >
   View Resume
 </a>
+=======
+            <a href="/resume.pdf" download className="secondary-btn">
+              Download Resume
+            </a>
+>>>>>>> 61c6f86400f6c4db10ba9ed1b9ee4828063154d5
           </div>
           <div className="side-arrow" onClick={() => navigate("/about")}>
   →

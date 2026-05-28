@@ -30,6 +30,7 @@ export default function Contact() {
         </div>
 
         {/* ===== BOTTOM: CONTACT INFO ===== */}
+<<<<<<< HEAD
        
         <div className="contact-info-box">
 
@@ -86,6 +87,44 @@ export default function Contact() {
 
 </div>
 </div>     </div>
+=======
+        <div className="contact-info-box">
+
+          <h2>Get in Touch</h2>
+
+          <div className="info-grid">
+
+            <div className="info-item">
+              <FaPhone/>
+              <p>+91 9876543210</p>
+            </div>
+
+            <div className="info-item">
+             <FaEnvelope />
+              <p>yourmail@gmail.com</p>
+            </div>
+
+            <div className="info-item">
+              <FaLinkedin/>
+              <a href="#">LinkedIn</a>
+            </div>
+
+            <div className="info-item">
+              <FaGithub />
+              <a href="#">GitHub</a>
+            </div>
+
+            <div className="info-item">
+              <FaInstagram/>
+              <a href="#">Instagram</a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+>>>>>>> 61c6f86400f6c4db10ba9ed1b9ee4828063154d5
     </section>
   );
 }
