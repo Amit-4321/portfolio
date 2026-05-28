@@ -1,0 +1,131 @@
+.contact-section{
+    min-height: 100vh;
+    padding: 100px 20px 40px;
+    background: linear-gradient(135deg,#020617,#0f172a);
+    display: flex;
+    justify-content: center;
+  }
+  /* Container */
+  .contact-container {
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  /* ===== FORM ===== */
+  .contact-form-box {
+    background: #0f172a;
+    padding: 30px;
+    border-radius: 16px;
+  }
+  
+  .contact-form-box h2 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .contact-form-box p {
+    text-align: center;
+    color: #94a3b8;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #1e293b;
+    background: #020617;
+    color: white;
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 999px;
+    background: #38bdf8;
+    color: #020617;
+    cursor: pointer;
+    width: fit-content;
+    align-self: center;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+  .contact-form button:hover {
+    background: #0ea5e9;
+    transform: translateY(-2px);
+    
+  }
+  
+  /* ===== CONTACT INFO ===== */
+  .contact-tag{
+    color: #00bcd4;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+  
+  .contact-desc{
+    color: #bdbdbd;
+    margin: 15px 0 30px;
+    line-height: 1.7;
+  }
+  
+  .info-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  .info-item{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 18px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+  
+  .info-item:hover{
+    transform: translateY(-4px);
+    background: rgba(255,255,255,0.08);
+  }
+  
+  .info-icon{
+    font-size: 24px;
+    color: #00bcd4;
+  }
+  .contact-info-box h2{
+    color: white;
+    padding-top: 10px;
+  }
+  .info-item h4{
+    color: white;
+    margin: 0;
+    font-size: 17px;
+  }
+  
+  .info-item p{
+    margin: 3px 0 0;
+    color: #bdbdbd;
+    font-size: 14px;
+  }
+  /* Mobile */
+  @media (max-width: 600px) {
+    .info-grid {
+      grid-template-columns: 1fr;
+    }
+  }

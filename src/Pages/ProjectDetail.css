@@ -1,0 +1,183 @@
+.projectDetails {
+    padding: 60px 10%;
+    background: #020617;
+    color: white;
+  }
+  
+  /* ===== Overview ===== */
+  .overviewSection {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .overviewSection h2 {
+    font-size: 40px;
+    color: #38bdf8;
+    margin-bottom: 10px;
+  }
+  
+  .overviewSection p {
+    max-width: 600px;
+    margin: auto;
+    color: #cbd5f5;
+    line-height: 1.6;
+  }
+  
+  /* ===== Screenshots ===== */
+  .screenshotSection {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  
+  .screenshotSection h3 {
+    font-size: 28px;
+    color: #38bdf8;
+    margin-bottom: 20px;
+  }
+  
+  .screenshotGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+  
+  .screenshotGrid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s;
+  }
+  
+  .screenshotGrid img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* ===== Bottom Section ===== */
+  .bottomSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  
+  /* Features */
+  .featuresBox {
+    background: #0f172a;
+    padding: 25px;
+    border-radius: 15px;
+  }
+  
+  .featuresBox h3 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .featuresBox ul {
+    padding-left: 20px;
+  }
+  
+  .featuresBox li {
+    margin-bottom: 10px;
+    color: #cbd5f5;
+  }
+  
+  /* Tech */
+  .techBox {
+    background: #0f172a;
+    padding: 25px;
+    border-radius: 15px;
+  }
+  
+  .techBox h3 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .techlist{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .techlist li {
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #1e293b;
+    cursor: pointer;
+    border-left: 3px solid #38bdf8;
+  }
+  /* 🔙 Back Button */
+  .side-arrow {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+  
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  
+    background: rgba(56, 189, 248, 0.1);
+    color: #38bdf8;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+  
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    transition: all 0.3s ease;
+    z-index: 100;
+  }
+  
+  /* LEFT SIDE */
+  .side-arrow.left {
+    left: 20px;
+  }
+  
+  /* RIGHT SIDE */
+  .side-arrow.right {
+    right: 20px;
+  }
+  
+  /* HOVER */
+  .side-arrow:hover {
+    transform: translateY(-50%) scale(1.1);
+    background: #38bdf8;
+    color: #020617;
+    box-shadow: 0 5px 20px rgba(56, 189, 248, 0.4);
+  }
+  
+  /* MOBILE */
+  @media (max-width: 768px) {
+    .side-arrow {
+      display: none;
+    }
+  }
+  /* Tech stack wrap fix */
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  .tags span {
+    background: #1e293b;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+  /* ===== Responsive ===== */
+  @media (max-width: 768px) {
+    .screenshotGrid {
+      grid-template-columns: 1fr;
+    }
+  
+    .bottomSection {
+      grid-template-columns: 1fr;
+    }
+  }

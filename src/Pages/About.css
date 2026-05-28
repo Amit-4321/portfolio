@@ -1,0 +1,106 @@
+/* ===== ABOUT SECTION ===== */
+.about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+  
+    background: linear-gradient(135deg, #020617, #0f172a);
+    color: #e2e8f0;
+    position: relative;  
+}
+  
+  /* ===== CONTAINER ===== */
+  .about-container {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* ===== HEADING ===== */
+  .about h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+  
+  /* ===== TEXT ===== */
+  .about p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #94a3b8;
+    margin-bottom: 15px;
+  }
+  
+  /* ===== NAME HIGHLIGHT ===== */
+  .about-intro span {
+    color: #38bdf8;
+    font-weight: 600;
+  }
+  
+  /* ===== HIGHLIGHT LINE ===== */
+  .about-highlight {
+    margin-top: 20px;
+    color: #38bdf8;
+    font-weight: 500;
+  }
+  
+  /* ===== SIDE ARROW ===== */
+  .side-arrow {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+  
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  
+    background: rgba(56, 189, 248, 0.1);
+    color: #38bdf8;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: bold;
+
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  /* HOVER FIX (no dance) */
+  .side-arrow:hover {
+    transform: translateY(-50%) scale(1.1);
+    background: #38bdf8;
+    color: #020617;
+    box-shadow: 0 5px 20px rgba(56, 189, 248, 0.4);
+  }
+  
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 900px) {
+    .side-arrow {
+      right: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about {
+      padding: 40px 15px;
+    }
+  
+    .about h1 {
+      font-size: 32px;
+    }
+  
+    .about p {
+      font-size: 14px;
+    }
+  
+    .side-arrow {
+      display: none; /* mobile me arrow hata dena better hai */
+    }
+  }
