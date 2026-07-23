@@ -12,9 +12,9 @@ export default function Projects() {
       link: "https://amit-4321.github.io/Ironfit-gym/"
     },
     {
-      title: "Blog Website",
-      desc: "Dynamic blog with categories and search functionality",
-      link: "https://amit-4321.github.io/My-Blog-/"
+      title: "Portfolio Website",
+      desc: "My personal portfolio website",
+      link: "https://amit-4321.github.io/portfolio/"
     },
     {
       title: "AI Tools Hub",
