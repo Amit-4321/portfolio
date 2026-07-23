@@ -82,7 +82,7 @@ export default function Hero() {
             </button>
 
             <a
-  href="/portfolio/Amit Kumar Saini Resume.pdf"
+  href="/portfolio/resume.pdf"
   className="secondary-btn"
 >
   View Resume
